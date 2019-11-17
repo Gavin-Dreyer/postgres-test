@@ -11,9 +11,10 @@ server.get('/', (req, res) => {
 })
 
 server.get('/users', (req, res) => {
-    db(users).then(response => {
+    db('users').then(response => {
         res.json(response)
     }).catch(err => {
+        console.log(err)
         res.status(500).json({ message: 'Failed to get resources' });
     });
 })

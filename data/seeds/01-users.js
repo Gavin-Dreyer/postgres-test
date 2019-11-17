@@ -1,6 +1,6 @@
 
 exports.seed = function (knex) {
-  return knex('table_name').insert([
+  return knex('users').insert([
     { username: 'john' },
     { username: 'jane' },
     { username: 'june' }
