@@ -6,7 +6,7 @@ module.exports = {
     client: 'pg',
     useNullAsDefault: true,
     connection: {
-      filename: './dev.sqlite3'
+      filename: './test.db3'
     },
     migration: {
       directory: './data/migrations'
